@@ -6,12 +6,20 @@
 
 </head>
 <style>
-    .clockWrap {
-        background-color: black;
-        width: 380px;
-        display: flex;
-        justify-content: center;
-    }
+.progBarWrap{
+    background-color: lightgray;
+    
+}
+#progBar{
+    background-color: green;
+    height:24px;
+}
+.clockWrap {
+    background-color: black;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+}
 #clock {
     font-size: 72px;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,8 +58,12 @@ div.fixed {
     <div id="clock"></div>
 </div>
 <div id="student_countdown"></div>
-<img src="WIN_20230829_13_59_12_Pro.jpg" style="opacity: 0.5; width: 30%;">
 
+
+<div class="progBarWrap">
+    <div id="progBar"></div>
+</div><br>
+<img src="WIN_20230829_13_59_12_Pro.jpg" style="opacity: 0.5; width: 30%;">
 </body>
 <script src="script.js"></script>
 </html>

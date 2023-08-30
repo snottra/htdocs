@@ -33,3 +33,18 @@ setInterval(() => {
     countdownEl.innerText = timeLeft;
 }, 1);
 
+//1692599400
+//1717300800
+let nuTid = new Date().getTime();
+let skolSlut = CountDownDate;
+let skolStart = new Date("Aug 21, 2023, 08:30:00").getTime();
+
+let skolTid = skolSlut - skolStart;
+console.log(skolTid / (1000*3600*24))
+let skolSpender = nuTid - skolStart;
+console.log(skolSpender / (1000*3600*24));
+
+let progProlle = 100 * (skolSpender / skolTid);
+console.log(progProlle);
+const progBarEl = document.getElementById("progBar");
+progBarEl.style.width = progProlle + "%";
