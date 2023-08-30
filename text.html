@@ -3,9 +3,29 @@
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/stilmall.css">
+
 </head>
 <style>
+    .clockWrap {
+        background-color: black;
+        width: 380px;
+        display: flex;
+        justify-content: center;
+    }
+#clock {
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #dd3a3a, #e66e1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+#student_countdown {
+    font-size: 72px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
     background-image: url("IMG-2425.jpg");
@@ -22,14 +42,16 @@ div.fixed {
 
 <div class="fixed">
     <a href="http://ceicer.com/ingemar/" target="_blank">
-        <img alt="ceicer.com" src="ingemar.jpg" width="500px" height="500px">
+        <img alt="ceicer.com" src="ingemar.jpg" width="250px" height="250px">
     </a>    
 </div>
-
-
+<div class="clockWrap">
+    
+    <div id="clock"></div>
+</div>
+<div id="student_countdown"></div>
 <img src="WIN_20230829_13_59_12_Pro.jpg" style="opacity: 0.5; width: 30%;">
-<p>Hej kuk</p>
-<div>Hej balle</div>  
-</body>
 
+</body>
+<script src="script.js"></script>
 </html>
