@@ -33,8 +33,7 @@ setInterval(() => {
     countdownEl.innerText = timeLeft;
 }, 1);
 
-//1692599400
-//1717300800
+
 let nuTid = new Date().getTime();
 let skolSlut = CountDownDate;
 let skolStart = new Date("Aug 21, 2023, 08:30:00").getTime();
@@ -48,3 +47,19 @@ let progProlle = 100 * (skolSpender / skolTid);
 console.log(progProlle);
 const progBarEl = document.getElementById("progBar");
 progBarEl.style.width = progProlle + "%";
+
+let clicks = 0
+function nybildClick() {
+    if (clicks % 2 == 0) {
+        fetBildEl.style.display = "block";
+    }
+    if (clicks % 2 !=0){
+        fetBildEl.style.display = "none ";
+    }
+    
+    clicks = clicks + 1;
+    console.log(clicks);
+}
+const buttonEl = document.getElementById("button");
+const fetBildEl = document.getElementById("fetBild");
+buttonEl.addEventListener("click", nybildClick);
