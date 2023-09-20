@@ -1,3 +1,36 @@
+
+li {
+    float: left;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f41010;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #721414;
+  }
+
+.active {
+    background-color: #dd3a3a;
+}  
+
 .progBarWrap{
     background-color: lightgray;
     border-radius: 15px;
@@ -31,7 +64,8 @@
 body {
     background-image: url("IMG-2425.jpg");
     background-position: center;
-    
+    background-size: 120%;
+    background-attachment: fixed;
 }
 div.fixed {
     position: fixed;
