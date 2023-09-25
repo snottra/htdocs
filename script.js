@@ -47,6 +47,7 @@ let progProlle = 100 * (skolSpender / skolTid);
 console.log(progProlle);
 const progBarEl = document.getElementById("progBar");
 progBarEl.style.width = progProlle + "%";
+progBarEl.innerText = Math.round(progProlle*10)/10 + "%";
 
 let clicks = 0
 function nybildClick() {

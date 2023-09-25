@@ -1,10 +1,11 @@
 
 li {
     float: left;
+    height: 100%;
 }
 
 ul {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -13,18 +14,19 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #f41010;
+    height: 50px;
 }
 
-li a {
+.topnavitem a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 12px;
     text-decoration: none;
-
+    height: 100%;
 }
-ul img:hover{
-    opacity: 50%;
+li img {
+    height: 50px;
 }
 li a:hover {
     background-color: #721414;
@@ -37,11 +39,22 @@ li a:hover {
 .progBarWrap{
     background-color: lightgray;
     border-radius: 15px;
+    width: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    
 }
 #progBar{
     background-color: green;
     height:24px;
     border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    
 }
 .clockWrap {
     background-color: black;
@@ -68,10 +81,13 @@ body {
     background-image: url("IMG-2425.jpg");
     background-position: center;
     background-size: 120%;
+    margin: 0;
     background-attachment: fixed;
 }
+
 div.fixed {
     position: fixed;
     top: 0;
     right: 0;
+    
 }
