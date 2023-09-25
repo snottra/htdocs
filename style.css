@@ -39,7 +39,7 @@ li a:hover {
 .progBarWrap{
     background-color: lightgray;
     border-radius: 15px;
-    width: 400px;
+    width: 600px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -48,12 +48,13 @@ li a:hover {
     
 }
 #progBar{
+    vertical-align: middle;
     background-color: green;
-    height:24px;
+    height:30px;
     border-radius: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     
 }
 .clockWrap {
