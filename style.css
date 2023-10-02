@@ -93,3 +93,50 @@ div.fixed {
     right: 0;
     
 }
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: white;
+    padding: 14px 12px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.numbertext {
+    position: absolute;
+    top: 0%;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
