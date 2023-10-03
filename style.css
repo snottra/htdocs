@@ -97,6 +97,7 @@ div.fixed {
 
 .slideshow-container {
     max-width: 1000px;
+    max-height: 300px;
     position: relative;
     margin: auto;
 }
