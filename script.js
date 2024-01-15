@@ -15,7 +15,7 @@ setInterval(() => {
 }, 1);
 
 
-let CountDownDate = new Date("Jun 2, 2024, 06:00:00").getTime();
+let CountDownDate = new Date("Jun 5, 2024, 06:00:00").getTime();
 
 setInterval(() => {
     let now = new Date().getTime();
